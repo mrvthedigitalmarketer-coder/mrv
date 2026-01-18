@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mr.V — AI Systems That Make Money</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      max-width: 420px;
+      padding: 40px;
+      text-align: center;
+      background: #020617;
+      border-radius: 12px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: #9ca3af;
+      margin-bottom: 20px;
+    }
+    .counter {
+      font-size: 22px;
+      font-weight: bold;
+      color: #22c55e;
+      margin: 20px 0;
+    }
+    .counter span {
+      font-size: 14px;
+      color: #9ca3af;
+      display: block;
+      margin-top: 4px;
+    }
+    a.button {
+      display: block;
+      margin: 12px 0;
+      padding: 14px;
+      text-decoration: none;
+      color: #020617;
+      background: #22c55e;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    a.secondary {
+      background: transparent;
+      color: #22c55e;
+      border: 2px solid #22c55e;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Build AI Systems That Make Money</h1>
+    <p>Faceless. Scalable. Built for Western clients.<br>
+    Learn the exact framework behind it.</p>
+
+    <div class="counter" id="count">1,200+</div>
+    <span class="counter span">builders using the Mr.V system</span>
+
+    <a class="button" href="#">Get the Free Checklist</a>
+    <a class="button secondary" href="#">Work With Mr.V</a>
+
+    <footer>
+      © 2026 Mr.V
+    </footer>
+  </div>
+
+  <script>
+    let count = 1200;
+    const el = document.getElementById("count");
+
+    setInterval(() => {
+      count += Math.floor(Math.random() * 3);
+      el.textContent = count.toLocaleString() + "+";
+    }, 4000);
+  </script>
+</body>
+</html>
